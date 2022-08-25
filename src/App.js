@@ -40,10 +40,18 @@ function App() {
   // }
   return (
     <>
-    <form>
-      <input id='id' type='text' placeholder='id'/>
-      <input id='descricao' type='text' placeholder='descricao'/>
-      <button onClick={addAtividade}>+ Atividade</button>
+    <form className="row g-3">
+      <div className="col-md-6">
+        <label htmlFor="inputEmail4" className="form-label">Id</label>
+        <input type="text" className="form-control" id='id'/>
+      </div>
+      <div className="col-md-6">
+          <label htmlFor="inputPassword4" className="form-label">Descrição</label>
+          <input type="text" className="form-control" id="descricao"/>
+      </div>  
+      <div className="col-12">
+        <button className="btn btn-outline-secondary" onClick={addAtividade}>+ Atividade</button>
+      </div>      
     </form>
     <div className="mt-3">
        <ul className='list-group'>
