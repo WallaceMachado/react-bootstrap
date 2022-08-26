@@ -72,6 +72,18 @@ function App() {
             </h6>
             </div>
           <p className="card-text">{ativ.descricao}</p>
+          <div className="d-flex justify-content-end pt-2 m-0 border-top">
+          <button className="btn btn-outline-primary me-2 btn-sm" 
+          onClick={addAtividade}>
+            <i className="fa-solid fa-pen me-1"></i>
+            Editar
+            </button>
+          <button className="btn btn-outline-danger btn-sm" 
+          onClick={addAtividade}>
+            <i className="me-1 fa-solid fa-trash"></i>
+            Deletar
+            </button>
+            </div>
         </div>
         </div>      
    
