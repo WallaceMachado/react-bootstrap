@@ -60,11 +60,15 @@ function App() {
         <div className="card-body">
            <div className="d-flex justify-content-between">
             <h5 className='card-title'>
-            <span class="badge bg-secondary me-1">{ativ.id}</span>
-              - titulo
+            <span className="badge bg-secondary me-1">{ativ.id}</span>
+                          - titulo
             </h5>
             <h6>
-              Prioridade: normal
+              Prioridade: 
+              <span className='ms-1 text-black'>
+              <i className="me-1 fa-solid fa-face-smile"></i>
+              normal
+              </span>
             </h6>
             </div>
           <p className="card-text">{ativ.descricao}</p>
